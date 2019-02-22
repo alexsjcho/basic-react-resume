@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Hello World</title>
+  </head>
+  <body>
+    <div id="application-root"></div>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/babel-standalone@6/babel.min.js"
+      crossorigin
+    ></script>
+
+    <script type="text/babel">
+      function Nav() {
+        return (
+          <main>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Education</a>
+                </li>
+                <li>
+                  <a href="#">Work</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <header>
+              <h1>Sally Sane Resume </h1>
+            </header>
+
+            <section class="education">
+              <header>
+                <h2>Education</h2>
+              </header>
+              <ul>
+                <li>Free Education University 2018</li>
+              </ul>
+            </section>
+
+            <section class="work">
+              <header>
+                <h2>Work</h2>
+              </header>
+              <ul>
+                <li>Employment Date: April 2017 - Present</li>
+                <li>Company: Disney</li>
+                <li>Job Title: Software Developer</li>
+                <li>
+                  Accomplishments: Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dolor provident necessitatibus ducimus culpa
+                  laboriosam ipsum error ullam exercitationem atque minima rerum
+                  tempora perspiciatis, vero dolorum ea eaque blanditiis
+                  deserunt ex?{" "}
+                </li>
+              </ul>
+
+              <ul>
+                <li>Employment Date: 2015 - 2018</li>
+                <li>Company: Google </li>
+                <li>Job Title: Software Developer</li>
+                <li>
+                  Accomplishments: Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dolor provident necessitatibus ducimus culpa
+                  laboriosam ipsum error ullam exercitationem atque minima rerum
+                  tempora perspiciatis, vero dolorum ea eaque blanditiis
+                  deserunt ex?{" "}
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Contact Info</h2>
+              <div> Name: Sally Sane </div>
+              <div> Phone: 415-415-1415 </div>
+              <div>
+                Email: <a href="mailto:imagination@gmail.com">Email Me</a>
+              </div>
+            </section>
+          </main>
+        );
+      }
+
+      ReactDOM.render(<Nav />, document.querySelector("#application-root"));
+    </script>
+  </body>
+</html>
